@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dave's Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"], select {
+            padding: 5px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+        .favorites {
+            margin-top: 20px;
+        }
+        .favorites label {
+            display: inline;
+        }
+        footer {
+            margin-top: 20px;
+            color: #666;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dave's Website</h1>
+    </header>
+
+    <main>
+        <form>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname">
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname">
+
+            <label for="workingbpay">Working:</label>
+            <input type="text" id="workingbpay" name="bpay" value="0.00">
+
+            <label for="working">Status:</label>
+            <input type="checkbox" id="working" name="working" value="3000.00" checked disabled> Working
+
+            <label>Gender:</label>
+            <input type="radio" id="gender-female" name="gender" value="Female"> Female
+            <input type="radio" id="gender-male" name="gender" value="Male" checked> Male
+
+            <label for="Level">Year Level:</label>
+            <select name="ylevel" id="Level">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </form>
+
+        <section class="favorites">
+            <h2>My Favorites</h2>
+            <p>Click the links below if you like cats or dogs:</p>
+            <a href="https://uploads.dailydot.com/2018/10/olli-the-polite-cat.jpg?q=65&auto=format&w=800&ar=2:1&fit=crop">Cats</a>
+            <br>
+            <a href="https://i.redd.it/zj7m5n0a2xx91.jpg">Dogs</a>
+            <p>By the way, cats are really nice!</p>
+        </section>
+    </main>
+
+    <footer>
+        <h3>&copy; 2024 Dave's Website</h3>
+    </footer>
+</body>
+</html>
